@@ -3,6 +3,9 @@ package com.example.willotterbeinlab4
 abstract class Mission(
     protected val minion: Minion
 ) {
+    init {
+        println(minion.catchphrase)
+    }
 
     fun start(missionListener: MissionListener) {
         val missionTime = determineMissionTime()
