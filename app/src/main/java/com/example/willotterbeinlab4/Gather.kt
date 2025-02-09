@@ -2,7 +2,7 @@ package com.example.willotterbeinlab4
 
 class Gather(minion: Minion) : Mission(minion), Repeatable {
     override fun determineMissionTime(): Int {
-        return (minion.backpackSize + minion.baseSpeed) * (0..5).random()
+        return (minion.backpackSize + minion.baseSpeed) * (0..4).random()
     }
 
     override fun reward(time: Int): String {

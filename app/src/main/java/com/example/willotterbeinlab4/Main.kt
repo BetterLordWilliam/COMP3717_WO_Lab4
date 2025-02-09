@@ -47,7 +47,7 @@ fun main() {
             println("A ${minion.race} was sent to gather resources")
         }
         override fun missionProgress() {
-            println(". . .\n. . .\n. . .")
+            println(". . .")
         }
         override fun missionComplete(minion: Minion, reward: String) {
             println("A ${minion.race} has returned from gathering, and found $reward!\n")
@@ -60,7 +60,7 @@ fun main() {
             println("A ${minion.race} started a new hunt")
         }
         override fun missionProgress() {
-            println(". . .\n. . .\n. . .")
+            println(". . .")
         }
         override fun missionComplete(minion: Minion, reward: String) {
             println("A ${minion.race} has returned from hunting, and found $reward!\n")

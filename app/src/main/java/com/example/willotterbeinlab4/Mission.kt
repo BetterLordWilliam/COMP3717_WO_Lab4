@@ -12,8 +12,10 @@ abstract class Mission(
         val reward = reward(missionTime)
 
         missionListener.missionStart(minion)
-        missionListener.missionProgress()
-        Thread.sleep(missionTime.toLong())
+        for (i in 0..2) {
+            missionListener.missionProgress()
+            Thread.sleep(1000)
+        }
         missionListener.missionComplete(minion, reward)
     }
 

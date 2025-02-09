@@ -2,7 +2,7 @@ package com.example.willotterbeinlab4
 
 class Hunt(minion: Minion) : Mission(minion) {
     override fun determineMissionTime(): Int {
-        return (minion.baseHealth + minion.baseSpeed) * (0..5).random()
+        return (minion.baseHealth + minion.baseSpeed) * (0..4).random()
     }
 
     override fun reward(time: Int): String {
